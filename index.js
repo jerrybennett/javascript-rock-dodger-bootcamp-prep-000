@@ -149,7 +149,7 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    window.requestAnimationFrame(function() {
-     var left = positionToInteger(DODGER.style.left);
+     var left = dodgerLeftEdge;
      if(left > 0) {
        DODGER.style.left = `${left - 4}px`;
      }
@@ -163,9 +163,9 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    window.requestAnimationFrame(function() {
-     var right = positionToInteger(DODGER.style.right);
+     var right = dodgerRightEdge;
      if(right < 360) {
-       DODGER.style.right = `${right + 4}px`;
+       DODGER.style.left = `${right + 4}px`;
      }
    });
 }
