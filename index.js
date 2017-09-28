@@ -119,7 +119,7 @@ function endGame() {
   }
   window.removeEventListener('keydown', moveDodger);
   clearInterval(gameInterval);
-  if(!alert('YOU LOSE!')){window.location.reload();}
+  if(!alert('YOU LOSE!')){window.location.reload(start);}
   // alert("YOU LOSE!");
 }
 
