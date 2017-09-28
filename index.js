@@ -120,7 +120,6 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger);
   clearInterval(gameInterval);
   alert("YOU LOSE!");
-  start();
 }
 
 function moveDodger(e) {
