@@ -69,7 +69,7 @@ function createRock(x) {
   function moveRock() {
     // implement me!
     // (use the comments below to guide you!)
-    top = parseInt(top) + 2;
+    top = parseInt(top) += 2;
 
     /**
      * If a rock collides with the DODGER,
@@ -117,7 +117,6 @@ function endGame() {
   for(var i = 0; i < ROCKS.length; i++) {
     ROCKS[i].remove();
   }
-
   window.removeEventListener('keydown', moveDodger);
   clearInterval(gameInterval);
   alert("YOU LOSE!");
