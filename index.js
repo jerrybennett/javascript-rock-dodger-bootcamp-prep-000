@@ -69,7 +69,7 @@ function createRock(x) {
   function moveRock() {
     // implement me!
     // (use the comments below to guide you!)
-    top = parseInt(top) + 2;
+    rock.style.top = parseInt(top) + 2;
 
     /**
      * If a rock collides with the DODGER,
