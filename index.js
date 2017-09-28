@@ -151,7 +151,7 @@ function moveDodgerLeft() {
    window.requestAnimationFrame(function() {
      var left = dodgerLeftEdge;
      if(left > 0) {
-       left = `${left - 4}px`;
+       dodgerLeftEdge = `${left - 4}px`;
      }
    });
 }
@@ -165,7 +165,7 @@ function moveDodgerRight() {
    window.requestAnimationFrame(function() {
      var right = dodgerRightEdge;
      if(right < 360) {
-       right = `${right + 4}px`;
+       dodgerRightEdge = `${right + 4}px`;
      }
    });
 }
